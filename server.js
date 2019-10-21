@@ -1,10 +1,10 @@
 const express       = require('express');
 const path          = require('path')
 const app           = express()
-const multer        = require('multer')
+const multer        = require('multer')           //is used for muti-part form
 const mysql         = require('mysql')
 const bodyParser    = require("body-parser");
-const bluebird      = require("bluebird");
+const bluebird      = require("bluebird");        //used to promisify the functions of mysql
 const keys          = require("./config/keys")
   
 const DIR = './uploads';
